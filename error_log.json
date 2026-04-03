@@ -1,0 +1,543 @@
+{
+    "errors": [
+        {
+            "dataset": "RAN",
+            "error_type": "UNEXPECTED_COLUMN",
+            "column": "unexpected_metric"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T08:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "pdcp_delay_ms"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T09:30:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T10:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_successes"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T11:15:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "dl_throughput_mbps"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T11:00:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T11:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_total"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T12:30:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T14:45:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_total"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T16:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "pdcp_delay_ms"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T18:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T19:15:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_total"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T19:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_successes"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T21:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T22:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_throughput_mbps"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-24T23:45:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T02:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_total"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T03:00:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_used"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T03:30:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T03:45:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "pdcp_delay_ms"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:00:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "packet_loss_percent"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:30:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_used"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:45:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_used"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:45:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_successes"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T04:30:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "handover_successes"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T05:45:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_attempts"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T06:15:00Z | gNB-002",
+            "error_type": "MISSING_VALUE",
+            "column": "rrc_setup_successes"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T07:30:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_prb_used"
+        },
+        {
+            "dataset": "RAN",
+            "key": "2026-03-25T09:00:00Z | gNB-001",
+            "error_type": "MISSING_VALUE",
+            "column": "ul_throughput_mbps"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T08:30:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T09:00:00Z | smf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T10:00:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T10:30:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T10:30:00Z | smf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T11:00:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T11:30:00Z | amf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T11:30:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T12:00:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T13:30:00Z | amf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T13:30:00Z | amf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T14:45:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T14:30:00Z | upf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T16:00:00Z | amf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T16:00:00Z | upf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_drop"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T16:15:00Z | upf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_ul_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T16:45:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T17:00:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T17:00:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T17:00:00Z | upf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_drop"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T18:00:00Z | amf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T17:30:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T19:00:00Z | upf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T19:30:00Z | amf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T19:45:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T20:30:00Z | amf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T20:30:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T21:00:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T21:00:00Z | smf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T21:00:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T21:00:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T22:00:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-24T23:30:00Z | smf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T00:00:00Z | upf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_drop"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T02:30:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T02:15:00Z | upf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T03:00:00Z | amf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T03:30:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T04:00:00Z | smf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T04:30:00Z | smf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T05:00:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T05:30:00Z | upf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_drop"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T05:30:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T05:45:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T06:15:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T06:30:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "pdu_session_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T06:45:00Z | smf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T07:00:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T06:45:00Z | upf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T07:30:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T07:45:00Z | amf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T07:45:00Z | upf-01",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_ul_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T08:00:00Z | amf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T08:15:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T09:00:00Z | smf-01",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "registration_successes"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T09:00:00Z | smf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "session_releases"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T09:30:00Z | upf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "n3_dl_packets"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T10:00:00Z | amf-02",
+            "error_type": "MISSING_REQUIRED_VALUE",
+            "column": "registration_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T09:30:00Z | upf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        },
+        {
+            "dataset": "CORE",
+            "key": "2026-03-25T10:45:00Z | amf-02",
+            "error_type": "FORBIDDEN_FIELD_PRESENT",
+            "column": "pdu_session_attempts"
+        }
+    ]
+}

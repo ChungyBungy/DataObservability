@@ -16,8 +16,61 @@ CORE_NODES = {
     "SMF": ["smf-01", "smf-02"],
     "UPF": ["upf-01", "upf-02"]
 }
+ANOMALY_PROB = 0.05
 
+RAN_ALL_COLUMNS = [
+    "dl_prb_used", "dl_prb_total", "ul_prb_used", "ul_prb_total",
+    "rrc_setup_attempts", "rrc_setup_successes",
+    "handover_attempts", "handover_successes",
+    "dl_throughput_mbps", "ul_throughput_mbps",
+    "packet_loss_percent", "pdcp_delay_ms"
+]
+
+CORE_SCHEMA = {
+    "AMF": {
+        "required": ["registration_attempts", "registration_successes"],
+        "forbidden": ["pdu_session_attempts", "pdu_session_successes", "session_releases", "n3_dl_packets"]
+    },
+    "SMF": {
+        "required": ["pdu_session_attempts", "pdu_session_successes", "session_releases"],
+        "forbidden": ["registration_attempts", "registration_successes", "n3_dl_packets"]
+    },
+    "UPF": {
+        "required": ["n3_dl_packets", "n3_ul_packets", "n3_dl_drop"],
+        "forbidden": ["registration_attempts", "registration_successes", "pdu_session_attempts"]
+    }
+}
 TIMESTEPS = [0, 15, 30]
+
+# -------------------------------
+# SCHEMA ANOMALIES
+# -------------------------------
+def inject_ran_schema_anomaly(row):
+    anomaly_type = random.choice(["missing", "extra"])
+
+    if anomaly_type == "missing":
+        col = random.choice(RAN_ALL_COLUMNS)
+        if col in row:
+            del row[col]
+
+    elif anomaly_type == "extra":
+        row["unexpected_metric"] = random.randint(1, 100)
+
+
+def inject_core_schema_anomaly(row):
+    nf_type = row["nf_type"]
+    rules = CORE_SCHEMA[nf_type]
+
+    anomaly_type = random.choice(["missing_required", "add_forbidden"])
+
+    if anomaly_type == "missing_required":
+        col = random.choice(rules["required"])
+        if col in row:
+            row[col] = None  # simulate missing data
+
+    elif anomaly_type == "add_forbidden":
+        col = random.choice(rules["forbidden"])
+        row[col] = random.randint(100, 1000)
 
 # -------------------------------
 # HELPERS
@@ -70,11 +123,11 @@ def generate_ran(target_rows):
                     delay = random.uniform(2, 4)
                     loss = random.uniform(0.01, 0.02)
 
-                rows.append({
+                row = {
                     "timestamp": timestamp.isoformat() + "Z",
                     "gnb_id": gnb,
                     "cell_id": cell,
-                    "dl_prb_used": dl_prb_used,
+                    "dl_prb_used": dl_prb_used, 
                     "dl_prb_total": 273,
                     "ul_prb_used": ul_prb_used,
                     "ul_prb_total": 273,
@@ -86,10 +139,13 @@ def generate_ran(target_rows):
                     "ul_throughput_mbps": round(ul_tp, 2),
                     "packet_loss_percent": round(loss, 3),
                     "pdcp_delay_ms": round(delay, 2)
-                })
+                }
 
-                if len(rows) >= target_rows:
-                    return pd.DataFrame(rows)
+                # Inject schema anomaly
+                if random.random() < ANOMALY_PROB:
+                    inject_ran_schema_anomaly(row)
+
+                rows.append(row)
 
     return pd.DataFrame(rows)
 
@@ -169,6 +225,10 @@ def generate_core(target_rows):
                         "n3_dl_drop": dl_drop,
                         "n3_ul_drop": ul_drop
                     })
+                
+                # Inject schema anomaly
+                if random.random() < ANOMALY_PROB:
+                    inject_core_schema_anomaly(row)
 
                 rows.append(row)
 
